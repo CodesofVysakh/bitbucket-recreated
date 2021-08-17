@@ -1,0 +1,653 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #253858;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #253858;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+	text-decoration: underline;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+h3{
+	line-height:1.6em;
+	font-size: 24px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 600;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #42526E;
+}
+a.button{
+	padding: 12px 16px;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+header{
+	height: 80px;
+	width: 100%;
+	padding: 20px 0;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px #888888;
+	position: fixed;
+	z-index: 2;
+}
+header section.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+header div.left{
+	display: flex;
+}
+header div.left h1{
+	width: 200px;
+}
+header div.left h1 a{
+	display: block;
+}
+header div.left h1 a img{
+	display: block;
+}
+header div.left ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+header div.left ul li{
+	margin-right: 30px;
+}
+header div.left ul li a{
+	color: #0052cc;
+}
+header div.right{
+	margin-top: 12px;
+}
+header div.right ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+header div.right ul li{
+	margin-right: 30px;
+}
+header div.right ul li:last-child{
+	margin-right: 0px;
+}
+header div.right ul li a{
+	color: #0052cc;
+}
+header div.right ul li a.button{
+	color: #0052cc;
+	border: 1px solid #0052cc;
+	border-radius: 4px;
+	padding: 5px 12px;
+}
+
+#spotlight{
+	background-color: #f4f5f7;
+	text-align: center;
+	padding: 90px 0;
+}
+#spotlight h3{
+	font-size: 45px;
+	padding: 15px 0;
+}
+#spotlight p{
+	font-size: 20px;
+	width: 60%;
+	margin: 0 auto;
+}
+#spotlight a{
+	display: inline-block;
+}
+#spotlight a.button{
+	background-color: #0052cc;
+	color: #fff;
+	border-radius: 4px;
+	padding: 10px 18px;
+	margin: 20px 0;
+}
+#spotlight span.label{
+	display: block;
+}
+#spotlight span.label a{
+	color: #0052cc;
+}
+#spotlight div.image{
+	margin: 0 auto;
+	display: block;
+	width: 70%;
+}
+#spotlight div.image img{
+	display: block;
+	width: 100%;
+}
+
+#features{
+
+}
+img.wave-img{
+	display: block;
+	width: 100%;
+	transform: rotate(-180deg);
+	margin-bottom: 50px;
+}
+#features ul{
+	margin: 80px 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+#features ul li{
+	width: 32%;
+	margin: 0 auto;
+	text-align: center;
+}
+#features ul li div.image{
+	height: 140px;
+	display: inline-block;
+}
+
+#features ul li img{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+}
+#features ul li h3{
+	font-size: 1.5rem;
+    line-height: 1.33333333;
+    margin-bottom: 16px;
+}
+#features ul li p{
+	font-size: 1rem;
+    line-height: 24px;
+}
+
+#highlights{
+	padding: 85px 0;
+}
+#highlights div.item{
+	display: flex;
+	margin-bottom: 50px;
+}
+#highlights div.item:last-child{
+	margin-bottom: 0px;
+}
+#highlights div.item div.image{
+	display: block;
+	width: 70%;
+}
+#highlights div.item div.image img{
+	display: block;
+	width: 100%;
+}
+#highlights div.item div.content{
+	width: 30%;
+	padding-top: 20px;
+	display: inline-block;
+}
+#highlights div.item div.content span.label{
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+#highlights div.item div.content h3{
+	font-size: 32px;
+	margin: 20px 0;
+}
+#highlights div.item div.content p{
+	font-size: 18px;
+}
+#highlights div.item div.content a.button{
+
+}
+
+#resources{
+	background-color: #f4f5f7;	;
+}
+#resources div.top{
+	padding: 80px 0;
+}
+#resources h3{
+	font-size: 45px;
+	text-align: center;
+}
+#resources p{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+#resources div.top p.head-p{
+	font-size: 22px;
+	text-align: center;
+}
+#resources div.top ul{
+	display: flex;
+	justify-content: center;
+}
+#resources div.top ul li{
+	width: 40%;
+	background-color: #fff;
+	margin-right: 30px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+#resources div.top ul li:last-child{
+	margin-right: 0px;
+}
+#resources ul li img{
+	display: block;
+	height: 80px;
+	margin-bottom: 20px;
+}
+#resources ul li h4{
+	font-size: 25px;
+	font-weight: 600;
+}
+#resources ul li p{
+	
+}
+#resources ul li a.button{
+	padding: 12px 0px;
+	color: #0052cc;
+}
+#resources ul li a.button img{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+#resources div.bottom{
+	padding-bottom: 80px;
+}
+#resources div.bottom h3{
+	font-size: 40px;
+}
+#resources div.bottom p.tail-p{
+	font-size: 22px;
+	text-align: center;
+}
+#resources div.bottom ul{
+	display: flex;
+	justify-content: space-between;
+}
+#resources div.bottom ul li{
+	width: 30%;
+}
+
+#brands{
+
+}
+#brands img{
+
+}
+#brands section.wrapper{
+	border-bottom: 3px solid #f4f5f4;
+}
+#brands section.wrapper h4{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 500;
+	width: 50%;
+}
+#brands section.wrapper img{
+	display: block;
+	width: 90%;
+	margin: 60px auto;
+}
+
+#pricing{
+	padding-bottom: 80px;
+}
+#pricing section.top{
+	
+}
+#pricing section.top h4{
+	margin: 40px auto;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 600;
+	width: 50%;
+}
+#pricing section.top ul{
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#pricing section.top ul li{
+	width: 32%;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+#pricing section.top ul li div.title{
+	text-align: center;
+	width: 100%;
+	border-bottom: 2px solid #f4f5f7;
+	padding: 25px;
+}
+#pricing section.top ul li div.title.bg{
+	background-color: #f4f5f7;
+}
+#pricing section.top ul li div.title h5{
+	font-size: 23px;
+	font-weight: 600;
+
+}
+#pricing section.top ul li div.content{
+	text-align: center;
+}
+#pricing section.top ul li div.content h4{
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+#pricing section.top ul li div.content span.user{
+	display: block;
+	font-size: 18px;
+}
+#pricing section.top ul li div.content small{
+	display: block;
+	font-size: 13px;
+}
+#pricing section.top ul li div.content a.button{
+	display: inline-block;
+	border: 1px solid #0052cc;
+	border-radius: 4px;
+	padding: 8px 20px;
+	margin: 25px 0;
+	font-weight: 600;
+	color: #0052cc;
+}
+#pricing section.top ul li div.content a.button.bg{
+	background-color: #0052cc;
+	color: #fff;
+}
+#pricing section.top ul li div.content span.label{
+	display: block;
+	margin-bottom: 60px;
+}
+#pricing section.top div.bottom{
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	text-align: center;
+	padding: 25px;
+}
+#pricing section.top div.bottom p b{
+	font-weight: 700;
+	margin-right: 10px;
+}
+#pricing section.top div.bottom p a{
+	color: #0052cc;
+}
+#pricing section.bottom{
+
+}
+#pricing section.bottom a.label{
+	display: block;
+	color: #0052cc;
+	text-align: center;
+	margin: 30px 0 80px;
+}
+#pricing section.bottom div.container{
+	background-color: #f4f5f7;
+	margin: 0 40px;
+}
+#pricing section.bottom div.container div.item{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: flex-start;
+	padding: 60px;
+}
+#pricing section.bottom div.container div.item:first-child{
+	padding-bottom: 0;
+}
+#pricing section.bottom div.container div.item div.image{
+	width: 20%;
+	display: block;
+}
+#pricing section.bottom div.container div.item div.image img{
+	display: block;
+	width: 100px;
+}
+#pricing section.bottom div.container div.item div.content{
+	width: 80%;
+}
+#pricing section.bottom div.container div.item div.content h4{
+	font-size: 32px;
+	font-weight: 600;
+}
+#pricing section.bottom div.container div.item div.content p{
+	margin: 25px 0;
+	font-size: 18px;
+}
+#pricing section.bottom div.container div.item div.content a.button{
+	padding: 12px 0;
+	color: #0052cc;
+}
+#pricing section.bottom div.container div.item div.content a.button img{
+
+}
+#banner{
+	background-image: url(../images/left_bottom_hero.png),url(../images/right_bottom_hero.png);
+	background-repeat: no-repeat,no-repeat;
+	background-position: bottom left, bottom right;
+	min-height: 300px;
+	background-size: 600px 300px, 600px 300px;
+	text-align: center;
+}
+#banner h4{
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	padding: 55px 0;
+}
+#banner a.button{
+	color: #fff;
+	background-color: #0052cc;
+	border-radius: 4px;
+	padding: 10px 16px;
+}
+
+footer{
+ 	background-color: #f4f5f4;
+	padding: 50px 0 30px;
+}
+footer div.top{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #949494;
+}
+footer div.top ul{
+	display: flex;
+}
+footer div.top ul li{
+	width: 25%;
+}
+footer div.top ul li:last-child{
+	width: 50%;
+}
+footer div.top ul li h3{
+	display: block;
+}
+footer div.top ul li a{
+	display: block;
+}
+footer div.top ul li p{
+	
+}
+footer div.top ul li form{
+	display: flex;
+}
+footer div.top ul li form input{
+	width: 80%;
+}
+footer div.top ul li form input:last-child{
+	width: 20%;
+}
+footer div.top ul li div.social{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+footer div.top ul li div.social p{
+	margin-right: 20px;
+}
+footer div.top ul li div.social div.icon{
+	margin-right: 20px;
+}
+footer div.top ul li div.social div.icon a{
+	
+}
+footer div.top ul li div.social div.icon a img{
+	display: block;
+	width: 30px;
+}
+footer div.bottom{
+	display: flex;
+}
+footer div.bottom div.left{
+	
+}
+footer div.bottom div.left div.content{
+	display: flex;
+	justify-content: space-between;
+}
+footer div.bottom div.left div.content h1{
+	
+}
+footer div.bottom div.left div.content h1 a{
+	
+}
+footer div.bottom div.left div.content h1 a img{
+	display: block;
+	width: 150px;
+}
+footer div.bottom div.left div.content ul{
+	display: flex;
+	justify-content: space-between;
+}
+footer div.bottom div.left div.content ul li{
+	
+}
+footer div.bottom div.left div.content ul li a{
+	
+}
+footer div.bottom div.left div.content p{
+	
+}
+footer div.bottom div.left div.select{
+
+}
+footer div.bottom div.right{
+
+}
+footer div.bottom div.right a{
+
+}
+footer div.bottom div.right a.button{
+	
+}
+footer div.bottom div.right a.button img{
+	
+}
+
