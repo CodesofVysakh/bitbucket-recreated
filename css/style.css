@@ -297,7 +297,8 @@ img.wave-img{
 	font-size: 18px;
 }
 #highlights div.item div.content a.button{
-
+	padding: 12px 0;
+	color: #0052cc;
 }
 
 #resources{
@@ -503,12 +504,12 @@ img.wave-img{
 	padding-bottom: 0;
 }
 #pricing section.bottom div.container div.item div.image{
-	width: 20%;
+	width: 25%;
 	display: block;
 }
 #pricing section.bottom div.container div.item div.image img{
 	display: block;
-	width: 100px;
+	width: 80%;
 }
 #pricing section.bottom div.container div.item div.content{
 	width: 80%;
@@ -551,10 +552,10 @@ img.wave-img{
 
 footer{
  	background-color: #f4f5f4;
-	padding: 50px 0 30px;
+	padding: 50px 0 20px;
 }
 footer div.top{
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid #949494;
 }
 footer div.top ul{
@@ -568,23 +569,41 @@ footer div.top ul li:last-child{
 }
 footer div.top ul li h3{
 	display: block;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 15px;
 }
 footer div.top ul li a{
 	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
 }
 footer div.top ul li p{
 	
 }
 footer div.top ul li form{
 	display: flex;
+	justify-content: space-between;
 }
 footer div.top ul li form input{
-	width: 80%;
+	margin: 15px 0;
+	padding: 12px 10px;
+	background-color: #fff;
 }
-footer div.top ul li form input:last-child{
+footer div.top ul li form input:first-child{
+	width: 75%;
+	border: 1px solid #a1a1a1;
+}
+footer div.top ul li form input[type="submit"]{
 	width: 20%;
+	border: 1px solid #0052cc;
+	background-color: #f4f5f4;
+	font-size: 16px;
+	color: #0052cc;
+	cursor: pointer;
 }
 footer div.top ul li div.social{
+	margin-top: 20px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -603,7 +622,10 @@ footer div.top ul li div.social div.icon a img{
 	width: 30px;
 }
 footer div.bottom{
+	margin-top: 15px;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 footer div.bottom div.left{
 	
@@ -613,21 +635,21 @@ footer div.bottom div.left div.content{
 	justify-content: space-between;
 }
 footer div.bottom div.left div.content h1{
-	
+	margin-right: 30px;
 }
 footer div.bottom div.left div.content h1 a{
-	
+	font-size: 16px;
 }
 footer div.bottom div.left div.content h1 a img{
 	display: block;
-	width: 150px;
+	width: 130px;
 }
 footer div.bottom div.left div.content ul{
 	display: flex;
 	justify-content: space-between;
 }
 footer div.bottom div.left div.content ul li{
-	
+	margin-right: 30px;
 }
 footer div.bottom div.left div.content ul li a{
 	
@@ -636,7 +658,7 @@ footer div.bottom div.left div.content p{
 	
 }
 footer div.bottom div.left div.select{
-
+	margin-top: 15px;
 }
 footer div.bottom div.right{
 
@@ -645,9 +667,293 @@ footer div.bottom div.right a{
 
 }
 footer div.bottom div.right a.button{
-	
+	color: #0052cc;
 }
 footer div.bottom div.right a.button img{
 	
 }
-
+@media all and (max-width: 1280px){
+	#highlights div.item div.content h3 {
+		margin: 10px 0;
+		line-height: 1.2em;
+	}
+	footer div.bottom div.left div.content ul li {
+		margin-right: 15px;
+	}
+}
+@media all and (max-width: 980px){
+	header div.left ul{
+		display: none;
+	}
+	#highlights div.item div.content{
+		padding-top: 5px;
+	}
+	#highlights div.item div.content p{
+		font-size: 16px;
+	}
+	#pricing section.top ul li div.content h4{
+		margin: 25px auto;
+	}
+	#pricing section.top ul li div.content h4 {
+		font-size: 39px;
+	}
+	#pricing section.bottom div.container div.item {
+		padding: 60px 30px;
+	}
+	footer div.top ul li form input[type="submit"] {
+		width: 23%;
+	}	
+	footer div.top ul li form input {
+		padding: 12px 3px;
+	}
+	footer div.top ul li a {
+		font-size: 14px;
+	}
+	footer div.bottom{
+		flex-direction: column-reverse;
+	}
+	footer div.bottom div.right{
+		margin-bottom: 10px;
+	}
+}
+@media all and (max-width: 768px){
+	#spotlight p {
+		width: 75%;
+	}
+	#spotlight div.image{
+		width: 85%;
+	}
+	#features ul{
+		margin: 80px 0 30px;
+		flex-wrap: wrap;
+	}
+	#features ul li{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	#highlights{
+		padding: 30px 0;
+	}
+	#highlights div.item{
+		flex-wrap: wrap;
+	}
+	#highlights div.item div.image{
+		width: 100%;
+	}
+	#highlights div.item div.content{
+		width: 100%;
+	}
+	#highlights div.item:nth-child(even){
+		flex-direction: column-reverse;
+	}
+	#resources div.top {
+		padding: 50px 0;
+	}
+	#resources div.top ul{
+		flex-wrap: wrap;
+	}
+	#resources div.top ul li{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	#resources div.bottom ul{
+		flex-wrap: wrap;
+	}
+	#resources div.bottom ul li{
+		width: 100%;
+	}
+	#resources ul li img {
+		margin: 25px auto;
+	}
+	#resources p {
+		margin-bottom: 10px;
+	}
+	#brands section.wrapper h4{
+		width: 85%;
+	}
+	#pricing {
+		padding-bottom: 20px;
+	}
+	#pricing section.top h4{
+		width: 70%;
+	}
+	#pricing section.top ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#pricing section.top ul li{
+		width: 60%;
+		margin-bottom: 15px;
+	}
+	#pricing section.top ul li:last-child{
+		margin-bottom: 0;
+	}
+	#pricing section.bottom a.label{
+		margin: 30px 0;
+	}
+	#pricing section.bottom div.container div.item {
+		padding: 45px 20px;
+	}
+	#banner{
+		background: #fff;
+		min-height: 250px;
+	}
+	footer div.top ul {
+		flex-wrap: wrap;
+	}
+	footer div.top ul li {
+		width: 50%;
+		padding: 10px 0;
+	}
+	footer div.top ul li:last-child {
+		width: 95%;
+	}
+	footer div.bottom {
+		align-items: flex-start;
+	}
+	footer div.bottom div.left div.content{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	footer div.bottom div.right a.button {
+		padding: 12px 0px;
+	}
+	footer div.bottom div.left div.content ul {
+		flex-direction: column;
+		margin: 5px 0;
+	}
+	footer div.bottom div.left div.content ul li{
+		margin: 5px 0;
+	}
+}
+@media all and (max-width: 640px){
+	h3 {
+		line-height: 1em;
+	}
+	header div.right ul li {
+		margin-right: 15px;
+	}
+	#spotlight{
+		padding: 100px 5px 50px;
+	}
+	#spotlight p {
+		width: 90%;
+	}
+	#features ul{
+		margin-top: 50px;
+	}
+	#features ul li h3 {
+		margin-bottom: 10px;
+	}
+	#resources div.top p.head-p {
+		font-size: 20px;
+	}
+	#resources div.top ul li{
+		padding: 30px 40px;
+	}
+	#resources div.bottom p.tail-p{
+		font-size: 20px;
+	}
+	#resources div.bottom {
+		padding-bottom: 50px;
+	}
+	#brands section.wrapper h4 {
+		width: 90%;
+	}
+	#pricing section.top h4 {
+		width: 75%;
+	}
+	#pricing section.top ul li {
+		width: 75%;
+	}
+	#pricing section.bottom div.container div.item{
+		flex-direction: column;
+		padding: 40px 20px;
+	}
+	#pricing section.bottom div.container div.item div.image {
+		margin: 20px;
+	}
+	#pricing section.bottom div.container div.item div.content {
+		width: 100%;
+	}
+	#banner {
+		min-height: 300px;
+	}
+	footer div.bottom div.left div.content h1 {
+		margin-top: 15px;
+	}
+}
+@media all and (max-width: 480px){
+	header section.wrapper {
+		justify-content: center;
+	}
+	header div.right{
+		display: none;
+	}
+	#spotlight h3 {
+		font-size: 30px;
+		padding: 15px;
+	}
+	#spotlight p {
+		font-size: 17px;
+	}
+	#spotlight span.label a {
+		margin: 8px 0;
+	}
+	#resources h3 {
+		font-size: 35px;
+	}
+	#resources div.top p.head-p {
+		font-size: 18px;
+	}
+	#resources div.top ul li {
+		padding: 30px 20px;
+	}
+	#resources div.bottom h3 {
+		font-size: 35px;
+	}
+	#resources div.bottom p.tail-p {
+		font-size: 18px;
+	}
+	#brands section.wrapper h4 {
+		font-size: 28px;
+	}
+	#brands section.wrapper img{
+		margin: 40px 0;
+	}
+	#pricing section.top h4 {
+		width: 90%;
+		font-size: 28px;
+	}
+	#pricing section.top ul li {
+		width: 95%;
+	}
+	#pricing section.bottom div.container {
+		margin: 0 15px;
+	}
+	#pricing section.bottom div.container div.item div.image {
+		width: 100%;
+	}
+	#pricing section.bottom div.container div.item div.content h4 {
+		font-size: 28px;
+	}
+	#pricing section.bottom div.container div.item div.content a.button {
+		font-size: 16px;
+	}
+	footer div.top ul li {
+		width: 100%;
+	}
+	footer div.top ul li form input {
+		padding: 10px 3px;
+	}
+	footer div.top ul li form input[type="email"] {
+		width: 55%;
+	}
+	footer div.top ul li form input[type="submit"] {
+		width: 40%;
+	}
+	footer div.top ul li div.social p {
+		margin-right: 12px;
+	}
+}
